@@ -1,0 +1,73 @@
+# Cursor Rules for Material Order Prediction System
+
+general:
+  - Utilize TypeScript for all React components and utility functions to enhance code reliability.
+  - Implement Tailwind CSS for responsive design across all components.
+  - Use Shadcn for customizable UI components to maintain consistency.
+  - Integrate Lucide Icons for lightweight iconography throughout the application.
+
+project_structure:
+  - Follow the file structure outlined in the masterplan for organized development.
+  - Use appropriate naming conventions for files and folders (e.g., PascalCase for components, camelCase for utilities).
+
+components:
+  - Develop reusable UI components in the `/src/components` directory.
+  - Document all components using Storybook for easy reference and testing.
+
+data_management:
+  - Use Supabase client for all database interactions in `salesService.ts` and `predictionService.ts`.
+  - Implement custom hooks like `useFetchSalesData` and `useFetchPredictions` for data fetching.
+
+ai_prediction:
+  - Develop the moving average prediction algorithm in `predictionLogic.ts`.
+  - Ensure prediction functions handle various forecast periods (week, month, year-end).
+
+visualization:
+  - Utilize Chart.js or Recharts for data visualization in the Analytics Dashboard.
+  - Implement interactive filters for product type, date range, and region.
+
+authentication:
+  - Configure Supabase Auth for secure user authentication and role-based access control.
+  - Implement AuthContext for managing user sessions across the application.
+
+error_handling:
+  - Use try-catch blocks for error handling in async operations.
+  - Implement user-friendly error messages and fallback UIs for common error scenarios.
+  - Integrate Sentry for error logging and monitoring.
+
+testing:
+  - Write unit tests for utility functions and components using Jest and React Testing Library.
+  - Implement integration tests to ensure proper interaction between services and components.
+
+performance:
+  - Optimize React components using memoization techniques where appropriate.
+  - Implement lazy loading for heavy components to improve initial load times.
+
+deployment:
+  - Configure CI/CD pipelines for automated testing and deployment to Vercel or Netlify.
+  - Use environment variables for sensitive information like Supabase keys.
+
+code_quality:
+  - Enforce consistent code style using ESLint and Prettier configurations.
+  - Use TypeScript's strict mode for enhanced type checking.
+
+documentation:
+  - Maintain up-to-date documentation in the `/docs` directory, including `architecture.md`.
+  - Use JSDoc comments for functions and components to provide inline documentation.
+
+security:
+  - Implement proper data validation and sanitization, especially for user inputs.
+  - Ensure all API calls use proper authentication and authorization checks.
+
+accessibility:
+  - Follow WCAG guidelines for creating accessible UI components.
+  - Use semantic HTML elements and ARIA attributes where necessary.
+
+version_control:
+  - Use descriptive commit messages following conventional commits format.
+  - Create feature branches for new developments and use pull requests for code reviews.
+
+cursor_specific:
+  - Utilize Cursor Chat for quick code-related queries and explanations.
+  - Use Cursor Composer for generating boilerplate code and component structures.
+  - Leverage Ctrl/⌘ K command palette for quick navigation and actions within the project.
